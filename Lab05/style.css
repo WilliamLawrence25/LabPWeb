@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=Silkscreen:wght@400;700&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-color: #b3a69e;
+  background-image: url("images/112523852_p0.jpg");
+  background-size: 1300px;
+  background-repeat: no-repeat;
+  background-position: top right;
+  font-family: 'Dhurjati', sans-serif;
+  font-family: 'Silkscreen', sans-serif;
+  border: 15px solid white;
+}
+#container{
+  width:55%;
+  margin: 0px;
+  padding: 16%;
+  margin-left: -10%;
+  margin-bottom: -20px;
+  
+}
+.titulo {
+  line-height: 90px;
+  color: white;
+  font-size: 65px;
+  margin: 0px;
+  margin-bottom: -200px;
+  -webkit-text-stroke: 1px black;
+}
+.tema{
+  -webkit-text-stroke: 1px black;
+  color: white;
+  font-size: 65px;
+  margin: 0px;
+  margin-top: -50px;
+}
+article{
+  -webkit-text-stroke: 0.5px black;
+  width: 140%;
+  padding: 0px;
+  margin: 0px;
+  margin-left: -30px;
+  line-height: 1;
+  color: white;
+  height: 0px;
+}
+.links{
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+.links a{
+  color: white;
+  line-height: 8.5;
+  margin: 50px;
+  
+}
+.esc{
+  padding: 0px;
+  margin: 0px;
+  line-height: 5.5;
+}
+.esc a{
+  color: white;
+  margin: 50px;
+}
+.clearfix{
+  clear: both;
+}
+footer{
+  color: white;
+  background-color: black;
+  text-align: center; 
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  left: 0;
+}
+
+

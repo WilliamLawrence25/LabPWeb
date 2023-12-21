@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="William" content="Genshin player">
+  <link rel="stylesheet" href="style.css">
+  <title>Busqueda Avanzada</title>
+  <script>
+    function buscarAvanzado() {
+      var todasPalabras = document.getElementById('todas').value;
+      var fraseExacta = document.getElementById('frase').value;
+      var ningunaPalabra = document.getElementById('ninguna').value;
+      var link = "https://www.google.com/search?q=" + encodeURIComponent(todasPalabras) + ' "' + encodeURIComponent(fraseExacta) + '" -' +encodeURIComponent(ningunaPalabra);
+      window.location.href = link;
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="bs.html">Busqueda Simple</a></li>
+          <li><a href="bi.html">Busqueda Imágenes</a></li>
+          <li><a href="ba.html">Busqueda Avanzada</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form>
+        <label for="todas">Todas estas palabras:</label>
+        <input type="text" id="todas" name="todas" required>
+
+        <label for="frase">Esta palabra o frase exacta:</label>
+        <input type="text" id="frase" name="frase" required>
+
+        <label for="ninguna">Ninguna de estas palabras:</label>
+        <input type="text" id="ninguna" name="ninguna" required>
+
+        <button type="button" onclick="buscarAvanzado()">Buscar</button>
+      </form>
+    </main>
+  </div>
+</body>
+</html>
