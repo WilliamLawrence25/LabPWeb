@@ -1,9 +1,8 @@
-#!/usr/bin/perl
+#!"C:/xampp/perl/bin/perl.exe"
 use strict;
 use warnings;
 use CGI;
 
-# Configuración del entorno
 print "Content-type: text/html\n\n";
 
 my $cgi = CGI->new;
@@ -14,7 +13,6 @@ if ($expression =~ /^([-+]?\d+(\.\d+)?)\s*([\+\-\*\/])\s*([-+]?\d+(\.\d+)?)$/) {
     my $operator = $3;
     my $operand2 = $4;
 
-    # Realizar la operación
     my $result;
     eval {
         $result = eval "$operand1 $operator $operand2";
