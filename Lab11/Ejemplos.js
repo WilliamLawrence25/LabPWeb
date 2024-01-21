@@ -7,8 +7,8 @@ let esVerdadero = true;
 let suma = 10 + 5;
 let concatenacion = "Hola" + " " + "mundo";
 
-// Ejemplo 3
-if (condicion) {
+// Ejemplo 2
+if (false) {
     console.log("La condicion es verdadera");
 } else {
     console.log("La condicion es falsa");
@@ -39,7 +39,7 @@ let persona = {
 let numeros = [1, 2, 3, 4, 5, 7, 2, 7];
 
 // Ejemplo de la funcion fetch
-fetch('https://osu.ppy.sh/home')
+fetch('https://api.thecatapi.com/v1/images/search')
     .then(response => response.json())
     .then(data => console.log(data))
     .catch(error => console.error('Error:', error));
